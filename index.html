@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tracking Guidelines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome {
+            padding: 30px;
+            background-color: #e9eef3; /* Primary color for welcome section */
+            color: black; /* Light text color */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .welcome h2 {
+            margin-bottom: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .navbar .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .main-content {
+            padding-top: 80px; /* To account for the fixed navbar */
+            text-align: center;
+            margin-top: 100px;
+        }
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .guidelines {
+            text-align: left;
+            margin: 20px;
+        }
+        .guidelines p {
+            margin: 10px 0;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .btn-primary { background-color: #007bff; }
+        .btn-secondary { background-color: #6c757d; }
+        .btn-warning { background-color: #ffc107; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#user-login">User Login</a>
+            <a href="#admin-login">Admin Login</a>
+            <a href="#security-login">Security Login</a>
+        </div>
+    </div>
+    <br><br><br>
+    <h2 class="mt-3 text-center">Smartphone Tracking System</h2>
+    <div class="main-content">
+        <img src="./images/phone2.jpg" alt="Is your car still where you left it?">
+
+        <section class="welcome mt-5">
+            <h2>How to Track a Stolen Phone With IMEI Number</h2>
+            <p>The rising instances of phone theft have become a major concern. Losing your phone can be distressing, but when it's stolen, the situation becomes even more worrisome.</p>
+            <p>Fortunately, there's a way to track a stolen phone using its unique International Mobile Equipment Identity (IMEI) number. <br>This 15-digit code serves as a vital tool in the recovery process and assists law enforcement agencies in locating the stolen device and apprehending the culprits behind the theft. <br>Let's explore the process of tracking a stolen phone with the IMEI number.</p>
+            <p>They can access this data by obtaining a judge’s permission to request it from your mobile service provider, often without your knowledge.</p>
+            <p>This may sound worrying, but it’s important to know that there are many restrictions in place that police must follow if they want access to your phone data.</p>
+            <p>Under U.S. law, the police must typically obtain a search warrant from a judge, which specifically permits them to track your phone.</p>
+            <h3 class="card-title">Table of Contents</h3>
+            <p class="card-text">
+                <li>What is an IMEI Number?</li>
+                <li>How are IMEI Numbers Assigned?</li>
+                <li>Why is IMEI Number Important?</li>
+            </p>
+        </section>
+    
+    <div id="user-login">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">What is an IMEI Number?</h5>
+                            <p class="card-text">IMEI stands for International Mobile Equipment Identity, and it is a unique 15-digit code assigned to every mobile device. This number acts as a distinct identifier for your phone and remains constant throughout its lifetime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">How are IMEI Numbers Assigned?</h5>
+                            <p class="card-text">When a phone is manufactured, a unique IMEI number is assigned to it by the device manufacturer. The IMEI number is then registered with the Global System for Mobile Communications (GSMA) and the wireless carrier providing service to the device.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Why is IMEI Number Important?</h5>
+                            <p class="card-text">The IMEI number plays a crucial role in various aspects of the mobile device's functioning. It helps cellular networks identify valid devices, prevent phone cloning, and blacklist stolen phones, making them useless on any network.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="user-login" class="section" >
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">User Login</h5>
+                            <p class="card-text">Login to your user account to report lost phones and receive updates.</p>
+                            <a href="login.php" class="btn btn-primary">User Login</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Admin Login</h5>
+                            <p class="card-text">Login to the admin panel to manage user reports and feedback.</p>
+                            <a href="admin_login.php" class="btn btn-secondary">Admin Login</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Security Agency Login</h5>
+                            <p class="card-text">Login to the security panel to track lost phones and respond to users.</p>
+                            <a href="security_login.php" class="btn btn-warning">Security Agency Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="welcome mt-5">
+        <h2>Can Law Enforcement Agencies Track My Cell Phone?</h2>
+        <p>Our phones collect extensive data, including our location, which law enforcement can access.</p>
+        <p>As phones collect so much information, police can access specific details about your location and whereabouts at any time.</p>
+        <p>They can access this data by obtaining a judge’s permission to request it from your mobile service provider, often without your knowledge.</p>
+        <p>This may sound worrying, but it’s important to know that there are many restrictions in place that police must follow if they want access to your phone data.</p>
+        <p>Under U.S. law, the police must typically obtain a search warrant from a judge, which specifically permits them to track your phone.</p>
+    </section>
+
+    <div id="admin-login" class="section">
+        <!-- Admin Login Section content here -->
+    </div>
+
+    <div id="security-login" class="section">
+        <!-- Security Login Section content here -->
+    </div>
+</body>
+</html>

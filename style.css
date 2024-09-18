@@ -1,0 +1,26 @@
+  body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .navbar {
+            background-color: #007bff; /* Navbar background color */
+        }
+        .navbar-brand {
+            color: #33ca0e; /* Navbar brand text color */
+        }
+        .nav-link {
+            color: #0b493a !important; /* Navbar link text color */
+        }
+        .nav-link:hover {
+            color: #e40909 !important; /* Navbar link text color on hover */
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }

@@ -1,0 +1,36 @@
+-- Create students table
+CREATE TABLE students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    matric_number VARCHAR(50) UNIQUE,
+    password VARCHAR(255),
+    clearance_status ENUM('not_started', 'sports', 'clinic', 'hostel', 'department', 'library', 'completed') DEFAULT 'not_started'
+);
+
+
+-- Create clearance_forms table
+CREATE TABLE clearance_forms (
+    form_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT,
+    download_link VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+
+-- Create clearance_status table
+CREATE TABLE clearance_status (
+    status_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT,
+    unit VARCHAR(50),
+    status ENUM('pending', 'cleared') DEFAULT 'pending',
+    cleared_at TIMESTAMP NULL,
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+
+ALTER TABLE clearance_forms ADD COLUMN student_affairs VARCHAR(255);
+ALTER TABLE clearance_forms ADD COLUMN sports VARCHAR(255);
+ALTER TABLE clearance_forms ADD COLUMN clinic VARCHAR(255);
+ALTER TABLE clearance_forms ADD COLUMN hostel VARCHAR(255);
+ALTER TABLE clearance_forms ADD COLUMN department VARCHAR(255);
+ALTER TABLE clearance_forms ADD COLUMN library VARCHAR(255);
